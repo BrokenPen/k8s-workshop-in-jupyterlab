@@ -3,7 +3,7 @@
 
 # install python3 pip3 nodejs npm
 echo $1 | sudo -S apt update -y
-echo $1 | sudo -S  apt install python3 python3-pip nodejs npm -y
+echo $1 | sudo -S  apt install python3 python3-pip nodejs vim npm -y
 
 
 ## check kubectl exist
