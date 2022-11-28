@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hostname
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hostname
+  template:
+    metadata:
+      labels:
+        app: hostname
+    spec:
+      containers:
+        - image: docker.io/brokenpen/hostname:v1
+          name: hostname
+          ports:
+            - name: http
+              containerPort: 8080
+ 

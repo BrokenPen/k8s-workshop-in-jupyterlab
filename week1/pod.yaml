@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: hostname
+    env: dev
+  name: hostname
+spec:
+  containers:
+  - image: docker.io/brokenpen/hostname:v1
+    name: hostname
